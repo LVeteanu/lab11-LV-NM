@@ -27,13 +27,13 @@ def divide(a, b):
     except ZeroDivisionError:
         raise ZeroDivisionError
 
-def logarith(a, b):
+def logarithm(a, b):
     try:
         return a * math.log(b)
     except ValueError:
         raise ValueError
 
 def exponent(a):
-    return a ** 2
+    return a ** b
 
 
