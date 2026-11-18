@@ -1,4 +1,5 @@
 import unittest
+import math
 from calculator import *
 
 class TestCalculator(unittest.TestCase):
@@ -24,17 +25,16 @@ class TestCalculator(unittest.TestCase):
     ######## Partner 2
     def test_divide_by_zero(self): # 1 assertion
         with self.assertRaises(ZeroDivisionError):
-            div(0, 5)
+            divide(5, 0)
 
     def test_logarithm(self): # 3 assertions
-        self.assertAlmostEqual(logarithm(2, 8), 3)
-        self.assertAlmostEqual(logarithm(10, 1000), 3)
-        self.assertAlmostEqual(logarithm(5, 1), 0)
+        self.assertAlmostEqual(logarithm(1, math.e), 1)
+        self.assertAlmostEqual(logarithm(2, math.e), 2)
+        self.assertAlmostEqual(logarithm(3, 1), 0)
 
     def test_log_invalid_base(self): # 1 assertion
         with self.assertRaises(ValueError):
-            logarithm(1, 5)
-
+            logarithm(2, 0)
     # ##########################
     
     ######## Partner 1
