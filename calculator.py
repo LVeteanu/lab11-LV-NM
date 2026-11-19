@@ -29,7 +29,16 @@ def subtract(a, b):
 def multiply(a, b):
     return a * b
 
+def mul(a, b):
+    return a * b
+
 def divide(a, b):
+    try:
+        return a / b
+    except ZeroDivisionError:
+        raise ZeroDivisionError
+
+def div(a, b):
     try:
         return a / b
     except ZeroDivisionError:
@@ -42,6 +51,9 @@ def logarithm(a, b):
         raise ValueError
 
 def exponent(a):
+    return a ** b
+
+def exp(a):
     return a ** b
 
 

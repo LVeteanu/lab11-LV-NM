@@ -1,3 +1,7 @@
+# https://github.com/LVeteanu/lab11-LV-NM.git
+# Partner 1: Luca Veteanu
+# Partner 2: Natalie Moore
+
 import unittest
 import math
 from calculator import *
